@@ -1,9 +1,7 @@
 import streamlit as st
 import requests
 
-# Konfigurasi internal
-WEMOS_IP = "http://192.168.1.2"  # IP Wemos kamu
-GOOGLE_API_KEY = "AIzaSyB1nFDDzDCmiS4KlK2L5njDqjnPbRAo_jA"  # Key validasi (opsional backend check)
+
 
 # Fungsi kontrol LED
 def led_control(action):
@@ -40,3 +38,4 @@ try:
     st.caption(f"Terhubung ke WeMos di {WEMOS_IP}")
 except:
     st.error("⚠️ Tidak bisa terhubung ke WeMos. Pastikan WiFi sama dan board sudah aktif.")
+
